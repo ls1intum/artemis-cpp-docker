@@ -1,6 +1,6 @@
 FROM rust:1.85 AS clang-tidy-sarif-builder
 
-RUN cargo install --root /usr/local --git https://github.com/ls1intum/sarif-rs.git --branch clang-tidy-ruleid clang-tidy-sarif
+RUN cargo install --root /usr/local clang-tidy-sarif@0.8.0
 
 FROM ubuntu:24.04
 
